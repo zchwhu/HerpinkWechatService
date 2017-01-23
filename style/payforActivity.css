@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: weui;
+}
+
+#header{
+    padding: 5px 0;
+    width: 100%;
+    background-color: #f24166;
+}
+
+#header .title{
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    font-size: 18px;
+}
+
+#content{
+    padding: 5%;
+    color: #333333;
+}
+
+#content div:first-child p:last-child{
+    margin: 10px 0;
+}
+
+#content div:first-child p:last-child span{
+    color: #FD8260;
+}
+
+#content div:last-child{
+    padding: 10px 50px;
+    background: url("../img/wexin.png") no-repeat 0 center;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+#content div:last-child p:last-child{
+    color: #9FA0A0;
+    font-size: 10px;
+}
+
+#footer a{
+    background-color: #f24166;
+    font-size: 14px;
+}
+
+#footer{
+    position: fixed;
+    bottom:10px;
+    width: 90%;
+    left: 5%;
+}

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: weui;
+}
+
+#header .title{
+    background-color: #F24166;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#header .coinInfo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#header .coinInfo span{
+    font-size:18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f24166;
+}
+
+#coinNum{
+    font-size:20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f24166;
+    width: 70px;
+    text-align: right;
+    background: url("../img/coins.png") no-repeat 0 center;
+    margin: 5px auto;
+}
+
+#content{
+    padding: 10px;
+}
+
+#content h4{
+    padding: 0px 15px;
+    border-left: 5px solid #f24166;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    border: 1px solid #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table th{
+    border-left: 1px solid #000000;
+}
+
+table th:first-child{
+    border:none;
+}
+
+table td{
+    border-left:1px solid #000000;
+    border-top:1px solid #000000;
+}
+
+table td:first-child{
+    border-left: none;
+}
+
+#rule>p{
+    font-size: 12px;
+    color: #999;
+}

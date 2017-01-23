@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>活动报名</title>
+    <link rel="stylesheet" href="style/weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/jquery-weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/joinOfflineActivity.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <form>
+            <div id="header">
+                <p class="title"><span>活动报名</span><button id="post" type="submit">下一步</button></p>
+            </div>
+            <div id="joinActivity">
+                <p>为了方便活动时能及时与您联系请填写以下信息</p>
+                <label for="phone">手机号码</label>
+                <input type="number" id="phone" name="phone" placeholder="请输入手机号码">
+            </div>
+            <div id="payforActivity" style="display: none">
+                <div>
+                    <p>联系人：<span>用户843579</span></p>
+                    <p id="phoneNum">手机号码：<span></span></p>
+                    <p>报名费用：<span>35.00</span>元/人</p>
+                    <p>应付金额：<span>35.00元</span>，请选择支付方式</p>
+                </div>
+                <div>
+                    <p>微信支付</p>
+                    <p>推荐微信用户使用</p>
+                </div>
+                <div id="footer">
+                    <a href="javascript:;" class="weui_btn weui_btn_warn">去支付</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="script/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="script/joinOfflineActivity.js" charset="gbk"></script>
+</body>
+</html>

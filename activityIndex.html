@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>粉蜜活动</title>
+    <link rel="stylesheet" href="style/weui.css" type="text/css">
+    <link rel="stylesheet" href="style/jquery-weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/activityIndex.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <p class="title"><span>粉蜜活动</span><a href="#" id="post"></a><a href="#" id="search"></a></p>
+        </div>
+
+        <div class="bd" style="display:none;">
+            <!--<a href="javascript:;" class="weui_btn weui_btn_primary">点击展现searchBar</a>-->
+            <div class="weui_search_bar" id="search_bar">
+                <form class="weui_search_outer">
+                    <div class="weui_search_inner">
+                        <i class="weui_icon_search"></i>
+                        <input type="search" class="weui_search_input" id="search_input" placeholder="搜索" required/>
+                        <a href="javascript:" class="weui_icon_clear" id="search_clear"></a>
+                    </div>
+                    <label for="search_input" class="weui_search_text" id="search_text">
+                        <i class="weui_icon_search"></i>
+                        <span>搜索</span>
+                    </label>
+                </form>
+                <a href="javascript:" class="weui_search_cancel" id="search_cancel">取消</a>
+            </div>
+        </div>
+
+        <div id="category" class="weui-row weui-no-gutter">
+            <div class="weui-col-25">
+                <div>
+                    <span><span class="type">类型</span><i></i></span>
+                </div>
+            </div>
+            <div class="weui-col-25">
+                <div>
+                    <span><span class="type">地区</span><i></i></span>
+                </div>
+            </div>
+            <div class="weui-col-25">
+                <div>
+                    <span><span class="type">综合</span><i></i></span>
+                </div>
+            </div>
+            <div class="weui-col-25 noborder">
+                <div>
+                    <span><span class="type">筛选</span><i></i></span>
+                </div>
+            </div>
+
+            <div id="activitySelect">
+                <div class="weui_cells weui_cells_radio" style="border-top: none;display: none;">
+                    <label class="weui_cell weui_check_label" for="x1" style="border-top: none;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p class="selected">类型</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" class="weui_check" name="radio1" id="x1" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x2" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>女学馆</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio1" class="weui_check" id="x2">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x3" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>美人计</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio1" class="weui_check" id="x3">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x4" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>粉妈帮</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio1" class="weui_check" id="x4">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x5">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>粉红club</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio1" class="weui_check" id="x5">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="weui_cells weui_cells_radio" style="border-top: none;display: none;">
+                    <label class="weui_cell weui_check_label" for="x6" style="border-top: none;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p class="selected">地区</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" class="weui_check" name="radio2" id="x6">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x7" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>洪山区</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio2" class="weui_check" id="x7" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x8" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>汉阳区</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio2" class="weui_check" id="x8" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x9" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>武昌区</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio2" class="weui_check" id="x9" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x10">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>江夏区</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio2" class="weui_check" id="x10" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="weui_cells weui_cells_radio" style="border-top: none;display: none;">
+                    <label class="weui_cell weui_check_label" for="x11" style="border-top: none;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p class="selected">综合</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" class="weui_check" name="radio3" id="x11">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x12" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>人气最高</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio3" class="weui_check" id="x12" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x13" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>最近更新</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio3" class="weui_check" id="x13" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x14" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>距离最近</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio3" class="weui_check" id="x14" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="weui_cells weui_cells_radio" style="border-top: none;display: none;">
+                    <label class="weui_cell weui_check_label" for="x15" style="border-top: none;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p class="selected">筛选</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" class="weui_check" name="radio4" id="x15">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x16" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p>免费</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio4" class="weui_check" id="x16" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui_cell weui_check_label" for="x17" style="border-top: 0px solid transparent;">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <p class="selected">收费</p>
+                        </div>
+                        <div class="weui_cell_ft">
+                            <input type="radio" name="radio4" class="weui_check" id="x17" checked="checked">
+                            <span class="weui_icon_checked"></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;height: 1px"></div>
+
+        <!--隐藏的表单用于获取选中的类别-->
+        <form>
+            <input type="hidden" name="type">
+            <input type="hidden" name="area">
+            <input type="hidden" name="multiple">
+            <input type="hidden" name="filter">
+        </form>
+
+        <div id="content">
+        <ul id="activityList">
+            <li>
+                <a href="#">
+                    <div class="activityTime">
+                        <p>还有<span>9</span>天开始</p>
+                        <p>6月，周日</p>
+                        <p>12</p>
+                    </div>
+                    <div class="activityImage">
+                        <img src="img/activity.jpg">
+                    </div>
+                    <div class="activityInfo">
+                        <p>我们约饭吧大厦上刊登哈萨克的哈数据库的哈萨克的拉升</p>
+                        <p>活动时间：<span>2016-06-12</span></p>
+                        <p>发起人：<span>百布堂手工家纺</span></p>
+                        <p><span>2人已参加</span><span>收费</span></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="activityTime">
+                        <p>还有<span>9</span>天开始</p>
+                        <p>6月，周日</p>
+                        <p>12</p>
+                    </div>
+                    <div class="activityImage">
+                        <img src="img/activity.jpg">
+                    </div>
+                    <div class="activityInfo">
+                        <p>我们约饭吧大厦上刊登哈萨克的哈数据库的哈萨克的拉升</p>
+                        <p>活动时间：<span>2016-06-12</span></p>
+                        <p>发起人：<span>百布堂手工家纺</span></p>
+                        <p><span>2人已参加</span><span>收费</span></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="activityTime">
+                        <p>还有<span>9</span>天开始</p>
+                        <p>6月，周日</p>
+                        <p>12</p>
+                    </div>
+                    <div class="activityImage">
+                        <img src="img/activity.jpg">
+                    </div>
+                    <div class="activityInfo">
+                        <p>我们约饭吧大厦上刊登哈萨克的哈数据库的哈萨克的拉升</p>
+                        <p>活动时间：<span>2016-06-12</span></p>
+                        <p>发起人：<span>百布堂手工家纺</span></p>
+                        <p><span>2人已参加</span><span>收费</span></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="activityTime">
+                        <p>还有<span>9</span>天开始</p>
+                        <p>6月，周日</p>
+                        <p>12</p>
+                    </div>
+                    <div class="activityImage">
+                        <img src="img/activity.jpg">
+                    </div>
+                    <div class="activityInfo">
+                        <p>我们约饭吧大厦上刊登哈萨克的哈数据库的哈萨克的拉升</p>
+                        <p>活动时间：<span>2016-06-12</span></p>
+                        <p>发起人：<span>百布堂手工家纺</span></p>
+                        <p><span>2人已参加</span><span>收费</span></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="activityTime">
+                        <p>还有<span>9</span>天开始</p>
+                        <p>6月，周日</p>
+                        <p>12</p>
+                    </div>
+                    <div class="activityImage">
+                        <img src="img/activity.jpg">
+                    </div>
+                    <div class="activityInfo">
+                        <p>我们约饭吧大厦上刊登哈萨克的哈数据库的哈萨克的拉升</p>
+                        <p>活动时间：<span>2016-06-12</span></p>
+                        <p>发起人：<span>百布堂手工家纺</span></p>
+                        <p><span>2人已参加</span><span>收费</span></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="activityTime">
+                        <p>还有<span>9</span>天开始</p>
+                        <p>6月，周日</p>
+                        <p>12</p>
+                    </div>
+                    <div class="activityImage">
+                        <img src="img/activity.jpg">
+                    </div>
+                    <div class="activityInfo">
+                        <p>我们约饭吧大厦上刊登哈萨克的哈数据库的哈萨克的拉升</p>
+                        <p>活动时间：<span>2016-06-12</span></p>
+                        <p>发起人：<span>百布堂手工家纺</span></p>
+                        <p><span>2人已参加</span><span>收费</span></p>
+                    </div>
+                </a>
+            </li>
+            <!--<li>-->
+                <!--<a href="#">-->
+                    <!--<div class="activityTime">-->
+                        <!--<p>还有<span>9</span>天开始</p>-->
+                        <!--<p>6月，周日</p>-->
+                        <!--<p>12</p>-->
+                    <!--</div>-->
+                    <!--<div class="activityImage">-->
+                        <!--<img src="img/activity.jpg">-->
+                    <!--</div>-->
+                    <!--<div class="activityInfo">-->
+                        <!--<p>我们约饭吧</p>-->
+                        <!--<p>活动时间：<span>2016-06-12</span></p>-->
+                        <!--<p>发起人：<span>百布堂手工家纺</span></p>-->
+                        <!--<p><span>2</span>人已参加<span>收费</span></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<a href="#">-->
+                    <!--<div class="activityTime">-->
+                        <!--<p>还有<span>9</span>天开始</p>-->
+                        <!--<p>6月，周日</p>-->
+                        <!--<p>12</p>-->
+                    <!--</div>-->
+                    <!--<div class="activityImage">-->
+                        <!--<img src="img/activity.jpg">-->
+                    <!--</div>-->
+                    <!--<div class="activityInfo">-->
+                        <!--<p>我们约饭吧</p>-->
+                        <!--<p>活动时间：<span>2016-06-12</span></p>-->
+                        <!--<p>发起人：<span>百布堂手工家纺</span></p>-->
+                        <!--<p><span>2</span>人已参加<span>收费</span></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<a href="#">-->
+                    <!--<div class="activityTime">-->
+                        <!--<p>还有<span>9</span>天开始</p>-->
+                        <!--<p>6月，周日</p>-->
+                        <!--<p>12</p>-->
+                    <!--</div>-->
+                    <!--<div class="activityImage">-->
+                        <!--<img src="img/activity.jpg">-->
+                    <!--</div>-->
+                    <!--<div class="activityInfo">-->
+                        <!--<p>我们约饭吧</p>-->
+                        <!--<p>活动时间：<span>2016-06-12</span></p>-->
+                        <!--<p>发起人：<span>百布堂手工家纺</span></p>-->
+                        <!--<p><span>2</span>人已参加<span>收费</span></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<a href="#">-->
+                    <!--<div class="activityTime">-->
+                        <!--<p>还有<span>9</span>天开始</p>-->
+                        <!--<p>6月，周日</p>-->
+                        <!--<p>12</p>-->
+                    <!--</div>-->
+                    <!--<div class="activityImage">-->
+                        <!--<img src="img/activity.jpg">-->
+                    <!--</div>-->
+                    <!--<div class="activityInfo">-->
+                        <!--<p>我们约饭吧</p>-->
+                        <!--<p>活动时间：<span>2016-06-12</span></p>-->
+                        <!--<p>发起人：<span>百布堂手工家纺</span></p>-->
+                        <!--<p><span>2</span>人已参加<span>收费</span></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<a href="#">-->
+                    <!--<div class="activityTime">-->
+                        <!--<p>还有<span>9</span>天开始</p>-->
+                        <!--<p>6月，周日</p>-->
+                        <!--<p>12</p>-->
+                    <!--</div>-->
+                    <!--<div class="activityImage">-->
+                        <!--<img src="img/activity.jpg">-->
+                    <!--</div>-->
+                    <!--<div class="activityInfo">-->
+                        <!--<p>我们约饭吧</p>-->
+                        <!--<p>活动时间：<span>2016-06-12</span></p>-->
+                        <!--<p>发起人：<span>百布堂手工家纺</span></p>-->
+                        <!--<p><span>2</span>人已参加<span>收费</span></p>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    </div>
+    <!--<div class="weui-infinite-scroll">-->
+        <!--<div class="infinite-preloader"></div>-->
+        <!--Herpink正在为您加载... &lt;!&ndash; 文案，可以自行修改 &ndash;&gt;-->
+    <!--</div>-->
+    <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="script/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="script/activityIndex.js" charset="gbk"></script>
+</body>
+</html>

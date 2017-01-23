@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#registerHeader img{
+    max-width: 100%;
+}
+
+#registerContent form div.msg input{
+    width: 95%;
+    margin: 0px auto;
+    display: inline-block;
+    padding: 5px 0;
+    /*text-align: center;*/
+    border-radius: 5px;
+    font-family: weui;
+    border: none;
+    height: 20px;
+}
+
+#registerContent form>button{
+    width: 95%;
+    background-color: #F24166;
+    line-height: 2;
+    cursor: pointer;
+}
+
+#registerContent form label{
+    width: 95%;
+    font-family: weui;
+    font-size: 13px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+#registerContent form label a{
+    color: #F24166;
+    cursor: pointer;
+}
+
+#msgValidation a{
+    border: 1px solid rgba(242,65,102, 1);
+    color: #F24166;
+}
+
+#registerContent form div.msg{
+    border: 1px solid #d1d1d5;
+    width: 95%;
+    margin: 20px auto;
+    height: 32px;
+    font-size:14px;
+}
+
+#registerContent form div span{
+    background: url("../img/delete.gif") no-repeat center;
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#registerContent #msgValidation{
+    width: 95%;
+    margin: 20px auto;
+    font-family: weui;
+}
+
+#registerContent #msgValidation div{
+    border: 1px solid #d1d1d5;
+    width: 58%;
+    margin-right: 2%;
+    height: 32px;
+}
+
+#registerContent #msgValidation input{
+    width:100%;
+    height: 20px;
+    padding: 5px 0;
+    border: none;
+    font-size:14px;
+    /*text-align: center;*/
+}
+
+#registerContent #msgValidation a{
+    display: inline-block;
+    height: 32px;
+    width: 40%;
+    font-size: 12px;
+    border-radius:0;
+    font-family: weui;
+}
+
+#registerContent #msgValidation a.inMsg{
+    border: 1px solid rgba(223,223,223, 1);
+    color: #DFDFDF;
+    border-radius:0;
+}
+
+#registerContent #msgValidation a::after{
+    border: 1px solid rgba(0, 0, 0, 0)
+}
+
+#userAgreement h3{
+    background-color: #F25376;
+    text-align: center;
+    color: #fff;
+    font-family: weui;
+    font-weight: 700;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#userAgreement p{
+    width: 90%;
+    margin: 10px auto;
+    font-family: weui;
+    font-size: 13px;
+    line-height: 150%;
+}
+
+#userAgreement a{
+    border: 1px solid rgba(242, 65, 102, 1);
+    color: #f24166;
+    font-family: weui;
+    font-size: 14px;
+    border-radius:0;
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+}
+
+#info{
+    width:90%;
+    color: #F24166;
+    margin: 10px auto;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: weui;
+}
+
+#info a:first-child{
+    float: left;
+}
+
+#info a:last-child{
+    float: right;
+}

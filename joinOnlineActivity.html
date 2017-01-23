@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>活动报名</title>
+    <link rel="stylesheet" href="style/weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/jquery-weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/joinOnlineActivity.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <form>
+            <div id="header">
+                <p class="title"><span>活动报名</span><button id="post" type="submit">提交</button></p>
+            </div>
+            <div id="content">
+                <p>为了方便活动时能及时与您联系请填写以下信息</p>
+                <label for="phone">手机号码</label>
+                <input type="number" id="phone" name="phone" placeholder="请输入手机号码">
+                <div id="photoForDisplay" class="uploaded"></div>
+                <span>
+                    上传图片
+                    <input id="file" type="file">
+                </span>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="script/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="script/joinOnlineActivity.js" charset="gbk"></script>
+</body>
+</html>

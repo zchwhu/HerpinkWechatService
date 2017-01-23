@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header .title{
+    background-color: #F25376;
+    text-align: center;
+    color: #fff;
+    font-family: weui;
+    font-weight: 700;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#content input{
+    width: 95%;
+    margin: 0px auto;
+    display: inline-block;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-family: weui;
+    border: none;
+    height: 20px;
+    font-size:14px;
+    line-height:20px;
+}
+
+#content form button{
+    width: 95%;
+    background-color: #F24166;
+    line-height: 2;
+}
+
+#content form div{
+    border: 1px solid #d1d1d5;
+    width: 95%;
+    margin: 20px auto;
+    height: 32px;
+}
+
+#content form div span{
+    background: url("../img/delete.gif") no-repeat center;
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#info{
+    color: #F76260;
+    font-size: 12px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+

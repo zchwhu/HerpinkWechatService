@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>发起活动</title>
+    <link rel="stylesheet" href="style/weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/jquery-weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/launchActivity.css" type="text/css">
+</head>
+<body>
+    <div id="content">
+        <form>
+            <div id="header">
+                <p class="title"><span>发起活动</span><button type="submit">下一步</button></p>
+            </div>
+            <h4>请选择活动类型：</h4>
+            <div class="radioclass">
+                <span class="on">
+                    <input type="radio" name="activity" id="offline" checked="checked" value="线下"/>
+                </span>
+                <label for="offline">线下</label>
+            </div>
+            <div class="radioclass">
+                <span>
+                    <input type="radio" name="activity" id="online" value="线上"/>
+                </span>
+                <label for="online">线上</label>
+            </div>
+            <div class="checkclass">
+                <span class="on">
+                    <input type="checkbox" name="onlineactivity" id="upload" value="上传图片"/>
+                </span>
+                <label for="upload">上传图片</label>
+            </div>
+            <div class="checkclass">
+                <span>
+                    <input type="checkbox" name="onlineactivity" id="vote" value="投票"/>
+                </span>
+                <label for="vote">投票</label>
+            </div>
+        </form>
+        <p>温馨提示：herpink普通用户目前发布的活动均自动默认为公益免费活动。如您发起的活动涉及收费，请联系027-87883800.</p>
+    </div>
+    <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="script/launchActivity.js"></script>
+</body>
+</html>

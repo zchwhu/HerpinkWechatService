@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>上传头像</title>
+    <link rel="stylesheet" href="style/weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/jquery-weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/uploadUserHeaderPhoto.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <p class="title"><span>上传头像</span><button id="post" type="submit">跳过</button></p>
+        </div>
+        <div id="content">
+            <div id="view"></div>
+            <p>据说美女们都喜欢上传自己美美的<span>头像</span>哦~</p>
+            <div class="weui-row">
+                <div class="weui-col-50">
+                    <span id="chooseBtn">
+                        选择图片
+                        <input id="file" type="file">
+                    </span>
+                </div>
+                <div class="weui-col-50">
+                    <span id="clipBtn">
+                        截取上传
+                        <button type="submit"></button>
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div id="clipArea" style="display: none"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="script/"></script>
+    <!-- <script type="text/javascript" src="script/hammer.js"></script> -->
+    <script type="text/javascript" src="script/iscroll-zoom.js"></script>
+    <script type="text/javascript" src="script/jquery.photoClip.js"></script>
+    <script type="text/javascript" src="script/uploadUserHeaderPhoto.js"></script>
+</body>
+</html>

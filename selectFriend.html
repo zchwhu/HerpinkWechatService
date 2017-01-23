@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>精确搜索</title>
+    <link rel="stylesheet" href="style/weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/jquery-weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/selectFriend.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <form>
+            <div id="header">
+                <p class="title"><span>精确搜索</span><button id="post" type="submit">完成</button></p>
+            </div>
+            <div id="content">
+                <p>精确搜索条件，方便找到好友</p>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">年龄：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" value="不限" id="age" name="age"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">星座：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" value="不限" id="constellation" name="constellation"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">区域：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" value="不限" id="area" name="area"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">职业：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" value="不限"  id='job' name="job"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">兴趣：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" value="不限" id='in' name="in"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="script/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="script/selectFriend.js" charset="gbk"></script>
+</body>
+</html>

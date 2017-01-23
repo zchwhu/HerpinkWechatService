@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>发起活动</title>
+    <link rel="stylesheet" href="style/weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/jquery-weui.min.css" type="text/css">
+    <link rel="stylesheet" href="style/launchOfflineActivity.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <form>
+            <div id="header">
+                <p class="title"><span>发起活动</span><button id="post" type="submit">确定</button></p>
+            </div>
+            <div id="content">
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">活动主题：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" placeholder="来一个响亮的主题吧" name="topic"/>
+                        </div>
+                    </div>
+                    <!--<div class="weui_cell">-->
+                        <!--<div class="weui_cell_hd"><label class="weui_label">活动类型：</label></div>-->
+                        <!--<div class="weui_cell_bd weui_cell_primary">-->
+                            <!--<input class="weui_input" type="text" placeholder="选择活动类型" id="type" name="type"/>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">开始时间：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" placeholder="选择开始时间"  id='begintime' name="begintime"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">结束时间：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" placeholder="选择结束时间" id='endtime' name="endtime"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">人数限制：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="number" pattern="[0-9]*" placeholder="请填写活动限制人数" name="personnum"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">活动地点：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" placeholder="选择活动地点" id="location" name="location"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_hd"><label class="weui_label">具体地点：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input class="weui_input" type="text" placeholder="选择活动具体地点" name="locationdetail"/>
+                        </div>
+                    </div>
+                    <div class="weui_cell" id="textArea">
+                        <div class="weui_cell_hd"><label class="weui_label">活动详情：</label></div>
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <textarea class="weui_textarea" placeholder="请简单描述一下您的活动流程" rows="3" name="content"></textarea>
+                        </div>
+                    </div>
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div class="weui_uploader">
+                                <div class="weui_uploader_hd weui_cell">
+                                    <div class="weui_cell_bd weui_cell_primary">图片上传</div>
+                                    <div class="weui_cell_ft" id="photoNum"><span>0</span>/5</div>
+                                </div>
+                                <div class="weui_uploader_bd">
+                                    <ul class="weui_uploader_files">
+
+                                    </ul>
+                                    <div class="weui_uploader_input_wrp">
+                                        <input class="weui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="script/jquery-weui.min.js"></script>
+    <script type="text/javascript" src="script/launchOfflineActivity.js" charset="gbk"></script>
+</body>
+</html>

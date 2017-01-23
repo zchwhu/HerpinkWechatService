@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: weui;
+}
+
+#header{
+    padding: 5px 0;
+    width: 100%;
+    background-color: #f24166;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#header .title{
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    font-size: 18px;
+}
+
+#content{
+    margin-top: 39px;
+    margin-bottom: 45px;
+}
+
+#commentList li{
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+#commentList li .commentHeader .userHeader{
+    width: 15%;
+    float: left;
+    text-align: center;
+}
+
+#commentList li .commentHeader .userHeader img{
+    max-width: 40px;
+    border-radius: 20px;
+}
+
+#commentList li .commentHeader .commentInfo{
+    width: 70%;
+    float: left;
+}
+
+#commentList li .commentHeader .commentInfo p{
+    margin-left: 5%;
+}
+
+#commentList li .commentHeader .commentInfo p:last-child{
+    color: #333333;
+}
+
+#commentList li .commentHeader .commentReply{
+    width: 15%;
+    float: left;
+    color: #007aff;
+    height:44px;
+    line-height: 44px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#commentList li .commentContent{
+    padding-left: 18.5%;
+}
+
+#commentArea{
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 1px solid #EFEFEF;
+}
+
+#commentArea input{
+    padding: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    display: inline-block;
+    width: 80%;
+    box-sizing: border-box;
+    height: 100%;
+    border: 1px solid #EFEFEF;
+}
+
+#commentArea button{
+    background-color: transparent;
+    width: 16%;
+    line-height: 14px;
+    font-size: 12px;
+    margin-left: 2%;
+    display: inline-block;
+    padding: 5px;
+    border: 0;
+    border: 1px solid #EFEFEF;
+    cursor: pointer;
+}
